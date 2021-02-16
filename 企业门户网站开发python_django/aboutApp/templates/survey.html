@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	{%  block title  %}
+		企业概括
+	{%  endblock  %}
+</head>
+<body>
+	{%  block content  %}
+	<div class="container-fluid">
+		<div class="row">
+			<img src="" class="img-responsive model-img">
+		</div>
+	</div>
+	<div class="container">
+		<div class="row row-3">
+			<div class="col-md-3">
+				<div class="model-title">
+					公司简介
+				</div>
+				<div class="model-list">
+					<ul class="list-group">
+						<li class="list-group-item" id="survey">
+							<a href="{% url 'aboutApp:survey' %}">企业概括</a>
+						</li>
+						<li class="list-group-item" id="honor">
+							<a href="{% url 'aboutApp:honor' %}">荣誉资质</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="container">
+					<div class="model-details-title">
+						科研基地介绍
+					</div>
+					<div class="model-details">
+					<p>
+						近二十年来，恒达致力于打造“志存高远，一诺千金”的企业文化...
+					</p>
+					<img src="" class="img-responsive">
+					<h3>研究方向</h3>
+					<h5>机器人导航：</h5>
+					<p>
+						多传感路径规划，物联网一体化平台，远程机器人交互，强化学习控制。
+					</p>
+					<h5>人体行为识别：</h5>
+					<p>
+						单用户行为识别，人体骨骼大数据分析，鲁棒特征抽取，多用户行为识别。
+					</p>
+					<h5>人脸识别属性：</h5>
+					<p>
+						人脸检测，属性分析，行人再识别。
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{%  endblock  %}
+</body>
+</html>

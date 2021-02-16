@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	{%  block title  %}
+	产品详情
+	{%  endblock  %}
+</head>
+<body>
+	{%  block content  %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/product.css' %}">
+	<div class="container">
+		<div class="model-details-product-title">
+			{{product.title}}
+		</div>
+		<div class="model-details">
+			{%  for img in product.productImgs.all  %}
+			<div class="row-4">
+				<img src="{{img.photo.url}}" class="img-responsive">
+			</div>
+			{%  endfor  %}
+			<h3>产品介绍</h3>
+			<p>{{product.description|linebreaks}}
+			</p>
+			<h3>参考价格</h3>
+			<p>{{product.price}}元</p>
+		</div>
+	</div>
+
+
+
+	{%  endblock  %}
+
+</body>
+</html>
