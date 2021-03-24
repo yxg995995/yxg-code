@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'cc75abe4655449a88f755edef8fd42c4')">PM2.5-有标注图</button>
+            <button class="tablinks" onclick="showChart(event, 'e2d46e618348447ebe345b548aa51ba1')">PM2.5-无标注图</button>
+    </div>
+
+    <div class="box">
+                <div id="cc75abe4655449a88f755edef8fd42c4" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_cc75abe4655449a88f755edef8fd42c4 = echarts.init(
+            document.getElementById('cc75abe4655449a88f755edef8fd42c4'), 'white', {renderer: 'canvas'});
+        var option_cc75abe4655449a88f755edef8fd42c4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "PM2.5",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "china",
+            "data": [
+                {
+                    "name": "\u5317\u4eac",
+                    "value": 55
+                },
+                {
+                    "name": "\u5929\u6d25",
+                    "value": 89
+                },
+                {
+                    "name": "\u4e0a\u6d77",
+                    "value": 34
+                },
+                {
+                    "name": "\u91cd\u5e86",
+                    "value": 21
+                },
+                {
+                    "name": "\u6cb3\u5317",
+                    "value": 44
+                },
+                {
+                    "name": "\u5c71\u897f",
+                    "value": 74
+                },
+                {
+                    "name": "\u5185\u8499\u53e4",
+                    "value": 12
+                },
+                {
+                    "name": "\u8fbd\u5b81",
+                    "value": 135
+                },
+                {
+                    "name": "\u5409\u6797",
+                    "value": 47
+                },
+                {
+                    "name": "\u9ed1\u9f99\u6c5f",
+                    "value": 32
+                },
+                {
+                    "name": "\u6c5f\u82cf",
+                    "value": 27
+                },
+                {
+                    "name": "\u6d59\u6c5f",
+                    "value": 23
+                },
+                {
+                    "name": "\u5b89\u5fbd",
+                    "value": 16
+                },
+                {
+                    "name": "\u798f\u5efa",
+                    "value": 42
+                },
+                {
+                    "name": "\u6c5f\u897f",
+                    "value": 26
+                },
+                {
+                    "name": "\u5c71\u4e1c",
+                    "value": 72
+                },
+                {
+                    "name": "\u6cb3\u5357",
+                    "value": 95
+                },
+                {
+                    "name": "\u6e56\u5317",
+                    "value": 26
+                },
+                {
+                    "name": "\u6e56\u5357",
+                    "value": 9
+                },
+                {
+                    "name": "\u5e7f\u4e1c",
+                    "value": 17
+                },
+                {
+                    "name": "\u5e7f\u897f",
+                    "value": 19
+                },
+                {
+                    "name": "\u6d77\u5357",
+                    "value": 8
+                },
+                {
+                    "name": "\u56db\u5ddd",
+                    "value": 28
+                },
+                {
+                    "name": "\u8d35\u5dde",
+                    "value": 51
+                },
+                {
+                    "name": "\u4e91\u5357",
+                    "value": 51
+                },
+                {
+                    "name": "\u897f\u85cf",
+                    "value": 9
+                },
+                {
+                    "name": "\u9655\u897f",
+                    "value": 41
+                },
+                {
+                    "name": "\u7518\u8083",
+                    "value": 83
+                },
+                {
+                    "name": "\u9752\u6d77",
+                    "value": 94
+                },
+                {
+                    "name": "\u5b81\u590f",
+                    "value": 59
+                },
+                {
+                    "name": "\u65b0\u7586",
+                    "value": 31
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "PM2.5"
+            ],
+            "selected": {
+                "PM2.5": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u4e2d\u56fd\u7701\u4f1a\u57ce\u5e02PM2.5\u6d53\u5ea6\u5730\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 200,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0
+    }
+};
+        chart_cc75abe4655449a88f755edef8fd42c4.setOption(option_cc75abe4655449a88f755edef8fd42c4);
+    </script>
+                <div id="e2d46e618348447ebe345b548aa51ba1" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_e2d46e618348447ebe345b548aa51ba1 = echarts.init(
+            document.getElementById('e2d46e618348447ebe345b548aa51ba1'), 'white', {renderer: 'canvas'});
+        var option_e2d46e618348447ebe345b548aa51ba1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "name": "PM2.5",
+            "coordinateSystem": "geo",
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u5317\u4eac\u5e02",
+                    "value": [
+                        116.4,
+                        39.9,
+                        55
+                    ]
+                },
+                {
+                    "name": "\u5929\u6d25\u5e02",
+                    "value": [
+                        117.2,
+                        39.12,
+                        89
+                    ]
+                },
+                {
+                    "name": "\u4e0a\u6d77\u5e02",
+                    "value": [
+                        121.47,
+                        31.23,
+                        34
+                    ]
+                },
+                {
+                    "name": "\u91cd\u5e86\u5e02",
+                    "value": [
+                        106.55,
+                        29.57,
+                        21
+                    ]
+                },
+                {
+                    "name": "\u77f3\u5bb6\u5e84\u5e02",
+                    "value": [
+                        114.52,
+                        38.05,
+                        44
+                    ]
+                },
+                {
+                    "name": "\u592a\u539f\u5e02",
+                    "value": [
+                        112.55,
+                        37.87,
+                        74
+                    ]
+                },
+                {
+                    "name": "\u547c\u548c\u6d69\u7279\u5e02",
+                    "value": [
+                        111.73,
+                        40.83,
+                        12
+                    ]
+                },
+                {
+                    "name": "\u6c88\u9633\u5e02",
+                    "value": [
+                        123.43,
+                        41.8,
+                        135
+                    ]
+                },
+                {
+                    "name": "\u957f\u6625\u5e02",
+                    "value": [
+                        125.32,
+                        43.9,
+                        47
+                    ]
+                },
+                {
+                    "name": "\u54c8\u5c14\u6ee8\u5e02",
+                    "value": [
+                        126.53,
+                        45.8,
+                        32
+                    ]
+                },
+                {
+                    "name": "\u5357\u4eac\u5e02",
+                    "value": [
+                        118.78,
+                        32.07,
+                        27
+                    ]
+                },
+                {
+                    "name": "\u676d\u5dde\u5e02",
+                    "value": [
+                        120.15,
+                        30.28,
+                        23
+                    ]
+                },
+                {
+                    "name": "\u5408\u80a5\u5e02",
+                    "value": [
+                        117.25,
+                        31.83,
+                        16
+                    ]
+                },
+                {
+                    "name": "\u798f\u5dde\u5e02",
+                    "value": [
+                        119.3,
+                        26.08,
+                        42
+                    ]
+                },
+                {
+                    "name": "\u5357\u660c\u5e02",
+                    "value": [
+                        115.85,
+                        28.68,
+                        26
+                    ]
+                },
+                {
+                    "name": "\u6d4e\u5357\u5e02",
+                    "value": [
+                        116.98,
+                        36.67,
+                        72
+                    ]
+                },
+                {
+                    "name": "\u90d1\u5dde\u5e02",
+                    "value": [
+                        113.62,
+                        34.75,
+                        95
+                    ]
+                },
+                {
+                    "name": "\u6b66\u6c49\u5e02",
+                    "value": [
+                        114.3,
+                        30.6,
+                        26
+                    ]
+                },
+                {
+                    "name": "\u957f\u6c99\u5e02",
+                    "value": [
+                        112.93,
+                        28.23,
+                        9
+                    ]
+                },
+                {
+                    "name": "\u5e7f\u5dde\u5e02",
+                    "value": [
+                        113.27,
+                        23.13,
+                        17
+                    ]
+                },
+                {
+                    "name": "\u5357\u5b81\u5e02",
+                    "value": [
+                        108.37,
+                        22.82,
+                        19
+                    ]
+                },
+                {
+                    "name": "\u6d77\u53e3\u5e02",
+                    "value": [
+                        110.32,
+                        20.03,
+                        8
+                    ]
+                },
+                {
+                    "name": "\u6210\u90fd\u5e02",
+                    "value": [
+                        104.07,
+                        30.67,
+                        28
+                    ]
+                },
+                {
+                    "name": "\u8d35\u9633\u5e02",
+                    "value": [
+                        106.63,
+                        26.65,
+                        51
+                    ]
+                },
+                {
+                    "name": "\u6606\u660e\u5e02",
+                    "value": [
+                        102.72,
+                        25.05,
+                        51
+                    ]
+                },
+                {
+                    "name": "\u62c9\u8428\u5e02",
+                    "value": [
+                        91.13,
+                        29.65,
+                        9
+                    ]
+                },
+                {
+                    "name": "\u897f\u5b89\u5e02",
+                    "value": [
+                        108.93,
+                        34.27,
+                        41
+                    ]
+                },
+                {
+                    "name": "\u5170\u5dde\u5e02",
+                    "value": [
+                        103.82,
+                        36.07,
+                        83
+                    ]
+                },
+                {
+                    "name": "\u897f\u5b81\u5e02",
+                    "value": [
+                        101.78,
+                        36.62,
+                        94
+                    ]
+                },
+                {
+                    "name": "\u94f6\u5ddd\u5e02",
+                    "value": [
+                        106.28,
+                        38.47,
+                        59
+                    ]
+                },
+                {
+                    "name": "\u4e4c\u9c81\u6728\u9f50\u5e02",
+                    "value": [
+                        87.62,
+                        43.82,
+                        31
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "PM2.5"
+            ],
+            "selected": {
+                "PM2.5": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u4e2d\u56fd\u7701\u4f1a\u57ce\u5e02PM2.5\u6d53\u5ea6\u5730\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "china",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_e2d46e618348447ebe345b548aa51ba1.setOption(option_e2d46e618348447ebe345b548aa51ba1);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
