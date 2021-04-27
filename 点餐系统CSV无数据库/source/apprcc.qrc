@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>bg.png</file>
+    <file>面饭/5.jpg</file>
+  </qresource>
+</RCC>
