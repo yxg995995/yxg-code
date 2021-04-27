@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>click.jpg</file>
+    <file>car.jpg</file>
+    <file>hum.jpg</file>
+    <file>light.jpg</file>
+    <file>temp.jpg</file>
+  </qresource>
+</RCC>
