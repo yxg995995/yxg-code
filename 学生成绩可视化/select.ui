@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>select</class>
+ <widget class="QWidget" name="select">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>336</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="QPushButton" name="Chinese">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>语文</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QPushButton" name="Math">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>数学</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4" colspan="2">
+    <widget class="QPushButton" name="English">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>英语</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="Physics">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>物理</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QPushButton" name="Chemistry">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>化学</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" colspan="2">
+    <widget class="QPushButton" name="Biology">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>生物</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QPushButton" name="comprehensive">
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>综合</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

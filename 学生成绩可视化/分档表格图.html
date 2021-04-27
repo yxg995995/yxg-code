@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+</head>
+<body>
+
+        <style>
+            .fl-table {
+                margin: 20px;
+                border-radius: 5px;
+                font-size: 12px;
+                border: none;
+                border-collapse: collapse;
+                max-width: 100%;
+                white-space: nowrap;
+                word-break: keep-all;
+            }
+
+            .fl-table th {
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .fl-table tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+            }
+
+            .fl-table tr:hover td {
+                background: #00d1b2;
+                color: #F8F8F8;
+            }
+
+            .fl-table td, .fl-table th {
+                border-style: none;
+                border-top: 1px solid #dbdbdb;
+                border-left: 1px solid #dbdbdb;
+                border-bottom: 3px solid #dbdbdb;
+                border-right: 1px solid #dbdbdb;
+                padding: .5em .55em;
+                font-size: 15px;
+            }
+
+            .fl-table td {
+                border-style: none;
+                font-size: 15px;
+                vertical-align: center;
+                border-bottom: 1px solid #dbdbdb;
+                border-left: 1px solid #dbdbdb;
+                border-right: 1px solid #dbdbdb;
+                height: 30px;
+            }
+
+            .fl-table tr:nth-child(even) {
+                background: #F8F8F8;
+            }
+        </style>
+        <div id="063a5c08a8564aed965421c508ad1ed0" class="chart-container" style="">
+            <p class="title" style="font-size: 18px; font-weight:bold;" > 分档成绩人数</p>
+            <p class="subtitle" style="font-size: 12px;" > 班级为单位</p>
+            <table class="fl-table">
+    <thead>
+        <tr>
+            <th>班级</th>
+            <th>一档人数</th>
+            <th>一档累积人数</th>
+            <th>一档累计上线率(%)</th>
+            <th>二档人数</th>
+            <th>二档累积人数</th>
+            <th>二档累计上线率(%)</th>
+            <th>三档人数</th>
+            <th>三档累积人数</th>
+            <th>三档累计上线率(%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>全体</td>
+            <td>134</td>
+            <td>134</td>
+            <td>9.01</td>
+            <td>569</td>
+            <td>703</td>
+            <td>47.28</td>
+            <td>690</td>
+            <td>1393</td>
+            <td>93.68</td>
+        </tr>
+        <tr>
+            <td>20班</td>
+            <td>35</td>
+            <td>35</td>
+            <td>79.55</td>
+            <td>9</td>
+            <td>44</td>
+            <td>100.0</td>
+            <td>0</td>
+            <td>44</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <td>9班</td>
+            <td>32</td>
+            <td>32</td>
+            <td>58.18</td>
+            <td>20</td>
+            <td>52</td>
+            <td>94.55</td>
+            <td>3</td>
+            <td>55</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <td>29班</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5.66</td>
+            <td>33</td>
+            <td>36</td>
+            <td>67.92</td>
+            <td>16</td>
+            <td>52</td>
+            <td>98.11</td>
+        </tr>
+        <tr>
+            <td>10班</td>
+            <td>20</td>
+            <td>20</td>
+            <td>39.22</td>
+            <td>28</td>
+            <td>48</td>
+            <td>94.12</td>
+            <td>2</td>
+            <td>50</td>
+            <td>98.04</td>
+        </tr>
+        <tr>
+            <td>11班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.33</td>
+            <td>25</td>
+            <td>27</td>
+            <td>45.0</td>
+            <td>24</td>
+            <td>51</td>
+            <td>85.0</td>
+        </tr>
+        <tr>
+            <td>26班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.39</td>
+            <td>21</td>
+            <td>23</td>
+            <td>38.98</td>
+            <td>30</td>
+            <td>53</td>
+            <td>89.83</td>
+        </tr>
+        <tr>
+            <td>23班</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5.08</td>
+            <td>26</td>
+            <td>29</td>
+            <td>49.15</td>
+            <td>28</td>
+            <td>57</td>
+            <td>96.61</td>
+        </tr>
+        <tr>
+            <td>21班</td>
+            <td>5</td>
+            <td>5</td>
+            <td>8.33</td>
+            <td>17</td>
+            <td>22</td>
+            <td>36.67</td>
+            <td>31</td>
+            <td>53</td>
+            <td>88.33</td>
+        </tr>
+        <tr>
+            <td>16班</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1.69</td>
+            <td>19</td>
+            <td>20</td>
+            <td>33.9</td>
+            <td>32</td>
+            <td>52</td>
+            <td>88.14</td>
+        </tr>
+        <tr>
+            <td>32班</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4.92</td>
+            <td>27</td>
+            <td>30</td>
+            <td>49.18</td>
+            <td>29</td>
+            <td>59</td>
+            <td>96.72</td>
+        </tr>
+        <tr>
+            <td>14班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.57</td>
+            <td>27</td>
+            <td>29</td>
+            <td>51.79</td>
+            <td>26</td>
+            <td>55</td>
+            <td>98.21</td>
+        </tr>
+        <tr>
+            <td>36班</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5.45</td>
+            <td>24</td>
+            <td>27</td>
+            <td>49.09</td>
+            <td>25</td>
+            <td>52</td>
+            <td>94.55</td>
+        </tr>
+        <tr>
+            <td>25班</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1.72</td>
+            <td>18</td>
+            <td>19</td>
+            <td>32.76</td>
+            <td>37</td>
+            <td>56</td>
+            <td>96.55</td>
+        </tr>
+        <tr>
+            <td>15班</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1.67</td>
+            <td>19</td>
+            <td>20</td>
+            <td>33.33</td>
+            <td>36</td>
+            <td>56</td>
+            <td>93.33</td>
+        </tr>
+        <tr>
+            <td>24班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.33</td>
+            <td>17</td>
+            <td>19</td>
+            <td>31.67</td>
+            <td>34</td>
+            <td>53</td>
+            <td>88.33</td>
+        </tr>
+        <tr>
+            <td>31班</td>
+            <td>4</td>
+            <td>4</td>
+            <td>6.9</td>
+            <td>19</td>
+            <td>23</td>
+            <td>39.66</td>
+            <td>31</td>
+            <td>54</td>
+            <td>93.1</td>
+        </tr>
+        <tr>
+            <td>17班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.23</td>
+            <td>27</td>
+            <td>29</td>
+            <td>46.77</td>
+            <td>25</td>
+            <td>54</td>
+            <td>87.1</td>
+        </tr>
+        <tr>
+            <td>13班</td>
+            <td>4</td>
+            <td>4</td>
+            <td>7.14</td>
+            <td>18</td>
+            <td>22</td>
+            <td>39.29</td>
+            <td>33</td>
+            <td>55</td>
+            <td>98.21</td>
+        </tr>
+        <tr>
+            <td>35班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.45</td>
+            <td>26</td>
+            <td>28</td>
+            <td>48.28</td>
+            <td>28</td>
+            <td>56</td>
+            <td>96.55</td>
+        </tr>
+        <tr>
+            <td>12班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.28</td>
+            <td>20</td>
+            <td>22</td>
+            <td>36.07</td>
+            <td>33</td>
+            <td>55</td>
+            <td>90.16</td>
+        </tr>
+        <tr>
+            <td>33班</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1.75</td>
+            <td>19</td>
+            <td>20</td>
+            <td>35.09</td>
+            <td>35</td>
+            <td>55</td>
+            <td>96.49</td>
+        </tr>
+        <tr>
+            <td>28班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.45</td>
+            <td>18</td>
+            <td>20</td>
+            <td>34.48</td>
+            <td>33</td>
+            <td>53</td>
+            <td>91.38</td>
+        </tr>
+        <tr>
+            <td>22班</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3.33</td>
+            <td>27</td>
+            <td>29</td>
+            <td>48.33</td>
+            <td>27</td>
+            <td>56</td>
+            <td>93.33</td>
+        </tr>
+        <tr>
+            <td>30班</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>24</td>
+            <td>24</td>
+            <td>43.64</td>
+            <td>28</td>
+            <td>52</td>
+            <td>94.55</td>
+        </tr>
+        <tr>
+            <td>27班</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>21</td>
+            <td>21</td>
+            <td>38.18</td>
+            <td>30</td>
+            <td>51</td>
+            <td>92.73</td>
+        </tr>
+        <tr>
+            <td>34班</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>20</td>
+            <td>20</td>
+            <td>35.09</td>
+            <td>34</td>
+            <td>54</td>
+            <td>94.74</td>
+        </tr>
+    </tbody>
+</table>
+        </div>
+
+
+</body>
+</html>

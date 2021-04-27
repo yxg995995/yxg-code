@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Math</class>
+ <widget class="QWidget" name="Math">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Export_btn">
+       <property name="text">
+        <string>输出为文档</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>成绩概括</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="5">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>差异系数</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLCDNumber" name="Min">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>最高分</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>中位数</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>平均分</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>最低分</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLCDNumber" name="Max">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLCDNumber" name="Std">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5">
+          <widget class="QLCDNumber" name="Dif">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLCDNumber" name="Mid">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLCDNumber" name="Avg">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>标准差</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget11">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_5">
+          <attribute name="title">
+           <string>面积图</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView11">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_6">
+          <attribute name="title">
+           <string>饼图</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView12">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_3">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_7">
+          <attribute name="title">
+           <string>分析</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QTextEdit" name="report1"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>分段成绩</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>最高分</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Max_2"/>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>最低分</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Min_2"/>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>分段间隔</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="distance">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="fresh">
+          <property name="text">
+           <string>重置</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="draw">
+          <property name="text">
+           <string>确定</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget21">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_8">
+          <attribute name="title">
+           <string>直方图</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView21">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_9">
+          <attribute name="title">
+           <string>饼图</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView22">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_11">
+          <attribute name="title">
+           <string>表</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView23">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_5">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_10">
+          <attribute name="title">
+           <string>分析</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QTextEdit" name="report2"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>四率一分</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>优秀率</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="excellent">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+           <property name="value" stdset="0">
+            <double>0.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>良好率</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="fine">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>及格率</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="Pass">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>低分率</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="low">
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget31">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_12">
+          <attribute name="title">
+           <string>平均分</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView31">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_13">
+          <attribute name="title">
+           <string>四率图</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView32">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_7">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_14">
+          <attribute name="title">
+           <string>分析</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QTextEdit" name="report3"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>分档成绩</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>一档线</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="one_2"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>二档线</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="two_2"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>三档线</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="three_2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="clear_3">
+           <property name="text">
+            <string>重置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="draw_4">
+           <property name="text">
+            <string>确定</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget41">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_15">
+          <attribute name="title">
+           <string>表格</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView41">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_17">
+          <attribute name="title">
+           <string>一档图</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView42">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_18">
+          <attribute name="title">
+           <string>二档图</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QWebEngineView" name="webEngineView43">
+             <property name="url">
+              <url>
+               <string>about:blank</string>
+              </url>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_9">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_16">
+          <attribute name="title">
+           <string>分析</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QTextEdit" name="report4"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

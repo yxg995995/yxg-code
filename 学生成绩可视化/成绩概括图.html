@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'bcc3ec98c1df4b67bd5631c9ac5d6376')">line</button>
+            <button class="tablinks" onclick="showChart(event, '18e947ec9b9e4452b32a4fa7c20ed7ad')">pie1</button>
+    </div>
+
+    <div class="box">
+                <div id="bcc3ec98c1df4b67bd5631c9ac5d6376" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_bcc3ec98c1df4b67bd5631c9ac5d6376 = echarts.init(
+            document.getElementById('bcc3ec98c1df4b67bd5631c9ac5d6376'), 'white', {renderer: 'canvas'});
+        var option_bcc3ec98c1df4b67bd5631c9ac5d6376 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": "blue",
+    "series": [
+        {
+            "type": "line",
+            "name": "\u4eba\u6570",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": true,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "0-15",
+                    5
+                ],
+                [
+                    "15-30",
+                    2
+                ],
+                [
+                    "30-45",
+                    18
+                ],
+                [
+                    "45-60",
+                    75
+                ],
+                [
+                    "60-75",
+                    268
+                ],
+                [
+                    "75-90",
+                    447
+                ],
+                [
+                    "90-105",
+                    356
+                ],
+                [
+                    "105-120",
+                    191
+                ],
+                [
+                    "120-135",
+                    106
+                ],
+                [
+                    "135-150",
+                    19
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0.5
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4eba\u6570"
+            ],
+            "selected": {
+                "\u4eba\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "\u5206\u6570\u6bb5",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": true,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "boundaryGap": false,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "0-15",
+                "15-30",
+                "30-45",
+                "45-60",
+                "60-75",
+                "75-90",
+                "90-105",
+                "105-120",
+                "120-135",
+                "135-150"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\u4eba\u6570",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_bcc3ec98c1df4b67bd5631c9ac5d6376.setOption(option_bcc3ec98c1df4b67bd5631c9ac5d6376);
+    </script>
+                <div id="18e947ec9b9e4452b32a4fa7c20ed7ad" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_18e947ec9b9e4452b32a4fa7c20ed7ad = echarts.init(
+            document.getElementById('18e947ec9b9e4452b32a4fa7c20ed7ad'), 'white', {renderer: 'canvas'});
+        var option_18e947ec9b9e4452b32a4fa7c20ed7ad = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "0-15",
+                    "value": 5
+                },
+                {
+                    "name": "15-30",
+                    "value": 2
+                },
+                {
+                    "name": "30-45",
+                    "value": 18
+                },
+                {
+                    "name": "45-60",
+                    "value": 75
+                },
+                {
+                    "name": "60-75",
+                    "value": 268
+                },
+                {
+                    "name": "75-90",
+                    "value": 447
+                },
+                {
+                    "name": "90-105",
+                    "value": 356
+                },
+                {
+                    "name": "105-120",
+                    "value": 191
+                },
+                {
+                    "name": "120-135",
+                    "value": 106
+                },
+                {
+                    "name": "135-150",
+                    "value": 19
+                }
+            ],
+            "radius": [
+                "40%",
+                "55%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "outside",
+                "margin": 8,
+                "formatter": "{hr|}\n {b|{b}: }{c}  {per|{d}%}  ",
+                "backgroundColor": "#eee",
+                "borderColor": "#aaa",
+                "borderWidth": 1,
+                "borderRadius": 4,
+                "rich": {
+                    "abg": {
+                        "backgroundColor": "#e3e3e3",
+                        "width": "100%",
+                        "align": "right",
+                        "height": 22,
+                        "borderRadius": [
+                            4,
+                            4,
+                            0,
+                            0
+                        ]
+                    },
+                    "hr": {
+                        "borderColor": "#aaa",
+                        "width": "100%",
+                        "borderWidth": 0.5,
+                        "height": 0
+                    },
+                    "b": {
+                        "fontSize": 16,
+                        "lineHeight": 33
+                    },
+                    "per": {
+                        "color": "#eee",
+                        "backgroundColor": "#334455",
+                        "padding": [
+                            2,
+                            4
+                        ],
+                        "borderRadius": 2
+                    }
+                }
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "0-15",
+                "15-30",
+                "30-45",
+                "45-60",
+                "60-75",
+                "75-90",
+                "90-105",
+                "105-120",
+                "120-135",
+                "135-150"
+            ],
+            "selected": {},
+            "show": true,
+            "right": "60%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_18e947ec9b9e4452b32a4fa7c20ed7ad.setOption(option_18e947ec9b9e4452b32a4fa7c20ed7ad);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

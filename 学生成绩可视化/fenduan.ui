@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenduan</class>
+ <widget class="QWidget" name="fenduan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>分段成绩界面</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>最高分</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Max"/>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>最低分</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Min"/>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>分段间隔</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="distance">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fresh">
+      <property name="text">
+       <string>重置</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="draw">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>直方图</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QWebEngineView" name="webEngineView1">
+         <property name="url">
+          <url>
+           <string>about:blank</string>
+          </url>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>饼图</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QWebEngineView" name="webEngineView2">
+         <property name="url">
+          <url>
+           <string>about:blank</string>
+          </url>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>表格</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QWebEngineView" name="webEngineView3">
+         <property name="url">
+          <url>
+           <string>about:blank</string>
+          </url>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

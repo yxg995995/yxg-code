@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>General</class>
+ <widget class="QWidget" name="General">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生成绩概括界面</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="math">
+       <property name="text">
+        <string>数学</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="chinese">
+       <property name="text">
+        <string>语文</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="english">
+       <property name="text">
+        <string>英语</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="physics">
+       <property name="text">
+        <string>物理</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="chemistry">
+       <property name="text">
+        <string>化学</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="biology">
+       <property name="text">
+        <string>生物</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="science">
+       <property name="text">
+        <string>理综</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>最高分</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>最低分</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>平均分</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>标准差</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>中位数</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>差异系数</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLCDNumber" name="Max">
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLCDNumber" name="Min">
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLCDNumber" name="Avg">
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLCDNumber" name="Std">
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLCDNumber" name="Mid">
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLCDNumber" name="Dif">
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>图像</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QWebEngineView" name="webEngineView">
+         <property name="url">
+          <url>
+           <string>about:blank</string>
+          </url>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
