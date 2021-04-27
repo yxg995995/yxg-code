@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>user (1).png</file>
+    <file>空白图.jpg</file>
+    <file>password.png</file>
+    <file>user.png</file>
+    <file>login.png</file>
+  </qresource>
+</RCC>
