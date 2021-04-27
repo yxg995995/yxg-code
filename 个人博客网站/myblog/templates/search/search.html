@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load highlight %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}博文搜索{% endblock %}
+</head>
+<body>
+	{% block body %}
+	<div class="page-header">
+		<h2>
+			关于“{{query}}”的搜索结果
+		</h2>
+	</div>
+	{%  for result in page.object_list  %}
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+			<img class="img-responsive" src="{{result.object.photo.url}}" /> 
+			<span>便签：</span>
+			<span class="label label-default">{{result.object.tag}}</span>
+		</div>
+		<div class="col-md-8 column">
+			<h4>
+			{{result.object.title}}
+			</h4>
+			<p>
+			{% highlight result.object.description with query %}
+			</p>
+			<p>
+				<a class="btn" href="{% url 'articleApp:detail' result.object.id %}">查看详情»</a>
+			</p>
+		</div>		
+	</div>
+	{%  empty  %}
+		<p>没有找到相关博文</p>
+	{% endfor %}
+	{%  if page.has_previous or page.has_next  %}
+		<div >
+			{%  if page.has_previous  %}
+				<a href="?q={{query}}&amp;page={{page.previous_page_number}}">
+					{% endif %}&laquo;上一页{% if page.has_previous %}
+				</a>
+			{%  endif  %}
+				{%  if page.has_next  %}
+				<a href="?q={{query}}&amp;page={{page.next_page_number}}">
+					{% endif %}下一页&raquo;{% if page.has_next %}
+				</a>
+			{%  endif  %}
+		</div>
+	{%  endif  %}
+	
+	{% endblock %}
+</body>
+</html>

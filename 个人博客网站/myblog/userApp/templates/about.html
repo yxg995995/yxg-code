@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}关于我{% endblock%}
+</head>
+<body>
+{% block body %}
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+			<img  src="{% static 'img\user.jpg' %}" class="img-responsive img-circle" style="margin-top: 20px;" />
+		</div>
+		<div class="col-md-8 column">
+			<div class="row clearfix " style="margin: 0 auto;">
+				<div class="col-md-5 column" style=" margin-top: 20px;">
+					<h3>姓名:<span style="font-size: 20px;">袁大人</span></h3>	
+					<h3>QQ:<span style="font-size: 20px;">2931148038</span></h3>
+				</div>
+				<div class="col-md-7 column" style=" margin-top: 20px;">
+				<h3>邮箱:<span style="font-size: 15px;">2931148038@qq.com</span></h3>
+				<h3>微博:<span style="font-size: 15px;">xxxxx</span></h3>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<h2>
+		很高兴你能参观我的个人博客
+	</h2>
+	<p>
+		一名大三在校大学生，爱好编程和电脑游戏，这个个人博客网站是我的第一次尝试，希望你能喜欢它。本人人擅长python语言，了解java和c等语言，如果有想要一起学习编程语言或者其他东西的朋友欢迎给我留言
+	</p>
+	<br>
+	<br>
+	<div class="row ">
+			<!--个人作品截图-->
+			<div class="col-md-12 col-pro">
+				<div class="row">
+					<div class="col-md-12">
+						<span class="part1" style="font-size: 20px;">
+						个人作品截图
+						</span>
+						<span class="part1 en">
+							&nbsp;&nbsp;/Works
+						</span>
+						<div class="line1" style="margin-bottom: 10px;">
+							<div class="line2 theme"></div>
+						</div>
+					</div>
+					<div class="col-md-12 col-pro">
+						<div id="ad" class="carousel slide" style="margin-bottom: 30px;" data-ride="carousel" data-interval='4000' id="ad">
+							<ol class="carousel-indicators">
+								<li data-target='#ad' data-slide-to='0' class="active"></li>
+								<li data-target='#ad' data-slide-to='1' ></li>
+								<li data-target='#ad' data-slide-to='2' ></li>
+							</ol>
+
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-md-6 pro-images">
+												<img  src="{% static 'img/PyQt_login.png' %}" alt="个人作品" class="img-responsive">	
+											<div class="carousel-caption nav-title">
+												PyQt登录界面
+											</div>
+										</div>
+										<div class="col-md-6 pro-images">
+												<img  src="{% static 'img/PyQt_register.png' %}" alt="个人作品" class="img-responsive" >	
+											<div class="carousel-caption nav-title">
+												PyQt注册界面
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="row">
+										<div class="col-md-6 pro-images">
+												<img  src="{% static 'img/天气查询.png' %}" alt="个人作品" class="img-responsive">	
+											<div class="carousel-caption nav-title">
+												PyQt天气查询
+											</div>
+										</div>
+										<div class="col-md-6 pro-images">
+												<img id="bigimg" src="{% static 'img/top250.png' %}" alt="个人作品" class="img-responsive">	
+											<div class="carousel-caption nav-title">
+												PyQt-豆瓣top250
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="row">
+										<div  class="col-md-6 pro-images">
+												<img src="{% static 'img/PyQt_login.png' %}" alt="个人作品" class="img-responsive">	
+											<div class="carousel-caption nav-title">
+												PyQt登录界面
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}
+</body>
+</html>

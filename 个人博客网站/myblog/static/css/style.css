@@ -1,0 +1,76 @@
+.navbar-default {
+    margin-bottom: 0px;
+    /* 底部边距调整为0 */
+    border: 0px;
+    /* 去掉边框 */
+    background-color: #e7e7e7;
+    /* 设置导航栏背景色 */
+    margin-top: 5px;
+    /* 设置导航栏的上边距 */
+}
+
+/* 导航栏栏目激活时属性 */
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:hover,
+.navbar-default .navbar-nav .active a:focus {
+    background-color: #005197;
+    /* 背景色设置为深蓝色 */
+    color: #fff;
+    /* 前景文字颜色设置为白色 */
+}
+
+/* 一级菜单鼠标移过时属性 */
+.navbar-default .navbar-nav li a:hover {
+    color: #fff;
+    background-color: #005197;
+}
+
+/* 一级菜单单击展开时属性 */
+.navbar-default .navbar-nav li.open a.on {
+    color: #fff;
+    background-color: #005197;
+}
+
+/* 下拉菜单内边距 */
+.dropdown-menu {
+    padding: 0px;
+}
+
+/* 二级菜单标签属性 */
+.dropdown-menu li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #777;
+    text-align: center;
+}
+
+/* 二级菜鼠标移过时属性 */
+.navbar-default .navbar-nav li ul a:hover{
+	color:#fff;
+	background-color:#005197;
+}
+/* 一级菜单激活时二级菜单鼠标移过时属性 */
+.navbar-default .navbar-nav li.active ul a:hover{
+	color:#fff;
+	background-color:#022a4d;
+}
+
+/* 一级菜单宽度和文字对齐方式 */
+.nav-top {
+    width: 14%;
+    text-align: center;
+}
+.top {
+    margin-top: 10px;
+}
+.banner {
+	display: block;
+	height: 100%;
+ 	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position:fixed;
+	-webkit-background-size: cover;
+    -o-background-size: cover;
+}
