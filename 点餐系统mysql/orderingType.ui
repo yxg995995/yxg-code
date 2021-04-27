@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Type</class>
+ <widget class="QWidget" name="Type">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>371</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>点单选择界面</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/pic/bg.png);</string>
+  </property>
+  <widget class="QPushButton" name="now_btn">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>72</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>直接就餐</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="book_btn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(160, 147, 255);</string>
+   </property>
+   <property name="text">
+    <string>预约就餐</string>
+   </property>
+  </widget>
+  <zorder>book_btn</zorder>
+  <zorder>now_btn</zorder>
+ </widget>
+ <resources>
+  <include location="source/apprcc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
